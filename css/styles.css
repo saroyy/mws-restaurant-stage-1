@@ -275,12 +275,3 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
-
-/* ====================== Media Queries ====================== */
-@media screen and (max-width: 610px) {
-
-	body {
-		background-color: black;
-		color: white;
-	}
-}
