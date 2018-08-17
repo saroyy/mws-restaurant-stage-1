@@ -47,6 +47,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+	width: 100%;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -72,7 +73,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: 50%;
 }
 
 /* Display list items side by side */
@@ -262,14 +263,14 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
-  margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 20px 20px;
   position: relative;
   width: 85%;
+	margin: 10px auto;
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -277,11 +278,41 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+#breadcrumb, #restaurant-container, #reviews-container, #footer {
+	box-sizing: border-box;
+}
 
 @media screen and (min-width:426px) and (max-width: 900px) {
 
 	#breadcrumb, #maincontent > section, .inside #footer {
 		width: 100%;
+	}
+
+	.inside header {
+		top: unset;
+		position: static;
+		z-index: unset;
+	}
+
+	.inside #map-container {
+		background: none;
+		right: unset;
+		top: unset;
+		position: static;
+		width: unset;
+		height: unset;
+	}
+
+	.inside #map {
+		height: 400px;
+	}
+
+	#restaurant-container {
+		padding-top: 25px;
+	}
+
+	#breadcrumb li {
+		font-size: 14pt;
 	}
 
 	.filter-options {
@@ -324,8 +355,39 @@ nav h1 a {
 
 @media screen and (max-width: 425px) {
 
-	#breadcrumb, #maincontent > section {
+	p {
+	  font-size: 14pt;
+	}
+
+	#breadcrumb, #maincontent > section, .inside #footer {
 		width: 100%;
+	}
+
+	.inside header {
+		top: unset;
+		position: static;
+		z-index: unset;
+	}
+
+	.inside #map-container {
+		background: none;
+		right: unset;
+		top: unset;
+		position: static;
+		width: unset;
+		height: unset;
+	}
+
+	.inside #map {
+		height: 400px;
+	}
+
+	#restaurant-container {
+		padding-top: 25px;
+	}
+
+	#breadcrumb li {
+		font-size: 14pt;
 	}
 
 	.filter-options {
