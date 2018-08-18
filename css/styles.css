@@ -282,6 +282,7 @@ nav h1 a {
 	box-sizing: border-box;
 }
 
+/* ====================== Media Queries ====================== */
 @media screen and (min-width:426px) and (max-width: 900px) {
 
 	#breadcrumb, #maincontent > section, .inside #footer {
@@ -347,11 +348,49 @@ nav h1 a {
 		padding: 25px;
 	}
 
+	#reviews-list {
+		margin-bottom: 50px;
+	}
+
+	.review-header {
+		display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+	}
+
+	.review-header p {
+		color: white;
+	}
+
+	#reviews-list > li {
+	  border-radius: 20px 0 20px 0;
+		width: 100%;
+		padding: 0;
+		margin: 25px 0;
+	}
+
+	#reviews-list > li > p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	#reviews-list .review-rating {
+		background-color: #FFA500;
+		color: white;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 5px 15px;
+		margin: 20px;
+	}
+
 	#footer {
 		font-size: 10pt;
 	}
 }
-
 
 @media screen and (max-width: 425px) {
 
@@ -420,6 +459,45 @@ nav h1 a {
 
 	#restaurants-list li > a {
 		padding: 25px;
+	}
+
+	#reviews-list {
+		margin-bottom: 50px;
+	}
+
+	.review-header {
+		display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+	}
+
+	.review-header p {
+		color: white;
+	}
+
+	#reviews-list > li {
+	  border-radius: 20px 0 20px 0;
+		width: 100%;
+		padding: 0;
+		margin: 25px 0;
+	}
+
+	#reviews-list > li > p {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	#reviews-list .review-rating {
+		background-color: #FFA500;
+		color: white;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 5px 15px;
+		margin: 20px;
 	}
 
 	#footer {
